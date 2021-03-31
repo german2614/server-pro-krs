@@ -25,7 +25,7 @@
     console.log("Conectado...");
 	
     client.subscribe("german.chafla@unach.edu.ec/sondeo");
-    //message = new Paho.MQTT.Message("HI WORLD");
+    message = new Paho.MQTT.Message("HI WORLD");
     message.destinationName = "german.chafla@unach.edu.ec/sondeo";
     client.send(message);
 	
