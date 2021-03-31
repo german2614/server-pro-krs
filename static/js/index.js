@@ -1,28 +1,5 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
-	alert("led on");
-	console.log("led on");
-	document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
-    	message.destinationName = "lfrenteriax@hotmail.com/test1";
-    	client.send(message);
-  
-}
-function LED1_Off(){	
-	alert("led off");
-	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
-    	message.destinationName = "lfrenteriax@hotmail.com/test1";
-    	client.send(message);
-	document.getElementById("sensor").innerHTML="led off";
-}
-
-
-
-
-
-
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
@@ -33,8 +10,8 @@ function LED1_Off(){
   client.onMessageArrived = onMessageArrived;
   var options = {
    useSSL: false,
-    userName: "lfrenteriax@hotmail.com",
-    password: "lfrenteriax",
+    userName: "german.chafla@unach.edu.ec",
+    password: "German1",
     onSuccess:onConnect,
     onFailure:doFail
   }
@@ -47,9 +24,9 @@ function LED1_Off(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("lfrenteriax@hotmail.com/test");
-    message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "lfrenteriax@hotmail.com/test1";
+    client.subscribe("grace.bonilla@unach.edu.ec/pulsador");
+    message = new Paho.MQTT.Message("HI WORLD");
+    message.destinationName = "german.chafla@unach.edu.ec/sondeo";
     client.send(message);
 	
   }
@@ -70,5 +47,20 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  
+	  
   }
-  
+
+
+
+function control(){	
+	
+	var datos = new Array(message.payloadString);
+	for (var i=0; i<=10; i++){
+		var datos[i] = message.payloadString;
+	}
+	document.write(var datos);
+	document.write('\n');
+	console.log(message.payloadString);
+
+}
