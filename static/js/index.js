@@ -24,7 +24,7 @@
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("grace.bonilla@unach.edu.ec/pulsador");
+    client.subscribe("german.chafla@unach.edu.ec/sondeo");
     message = new Paho.MQTT.Message("HI WORLD");
     message.destinationName = "german.chafla@unach.edu.ec/sondeo";
     client.send(message);
