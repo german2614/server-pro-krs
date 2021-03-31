@@ -52,10 +52,10 @@ function control(){
 	
 	var datos = new Array();
 
-		 datos[0] = 1;
-	datos[1] = 0;
-	datos[2] = 3;
-	datos[3] = 4;
+		 datos[0] = sensor;
+	datos[1] = sensor;
+	datos[2] = sensor;
+	datos[3] = sensor;
 		document.write(datos);
 	console.log(message.payloadString);
 }
