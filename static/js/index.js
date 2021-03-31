@@ -47,12 +47,7 @@
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
-	  
-	  
-  }
-
-
-
+	    }
 function control(){	
 	
 	var datos = new Array(message.payloadString);
@@ -60,5 +55,5 @@ function control(){
 		 datos[i] = message.payloadString;
 	}
 	document.write(datos);
-	console.log(message.payloadString);#
+	console.log(message.payloadString);
 }
