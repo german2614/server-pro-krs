@@ -52,9 +52,9 @@ function control(){
 	
 	var datos = new Array();
 
-		 datos[0] = document.getElementById("sensor").innerHTML;
+		 datos[0] = (id("sensor"));
 	datos[1] = document.getElementById("sensor").innerHTML;
-	datos[2] = document.getElementById("sensor").innerHTML;
+	datos[2] = (id("sensor"));
 	datos[3] = document.getElementById("sensor").innerHTML;
 		document.write(datos);
 	console.log(message.payloadString);
