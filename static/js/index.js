@@ -53,9 +53,9 @@ function control(){
 	var datos = new Array();
 
 		 datos[0] = (message);
-	datos[1] = (message);
+	datos[1] = document.getElementById("sensor").innerHTML;
 	datos[2] = (message);
-	datos[3] = (message);
+	datos[3] = document.getElementById("sensor").innerHTML;
 		document.write(datos);
 	console.log(message.payloadString);
 }
