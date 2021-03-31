@@ -52,10 +52,10 @@ function control(){
 	
 	var datos = new Array();
 
-		 datos[0] = console.log("onMessageArrived:"+message.payloadString);
+		 datos[0] = ("message");
 	datos[1] = document.getElementById("sensor").innerHTML;
 	datos[2] = console.log("onMessageArrived:"+message.payloadString);
-	datos[3] = document.getElementById("sensor").innerHTML;
+	datos[3] = message;
 		document.write(datos);
 	console.log(message.payloadString);
 }
