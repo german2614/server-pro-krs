@@ -56,11 +56,9 @@
 function control(){	
 	
 	var datos = new Array(message.payloadString);
-	for (var i=0; i<=10; i++){
+	for (var i=1; i<=10; i++){
 		 datos[i] = message.payloadString;
 	}
 	document.write(datos);
-	document.write('\n');
-	console.log(message.payloadString);
-
+	console.log(message.payloadString);#
 }
