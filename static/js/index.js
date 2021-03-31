@@ -54,6 +54,6 @@ function control(){
 	for (var i=1; i<=10; i++){
 		 datos[i] = document.getElementById("sensor").innerHTML;
 	}
-	document.write(datos);
+	document.write(datos[3]);
 	console.log(message.payloadString);
 }
