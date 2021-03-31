@@ -25,7 +25,7 @@
     console.log("Conectado...");
 	
     client.subscribe("german.chafla@unach.edu.ec/sondeo");
-    message = new Paho.MQTT.Message("HI WORLD");
+    //message = new Paho.MQTT.Message("HI WORLD");
     message.destinationName = "german.chafla@unach.edu.ec/sondeo";
     client.send(message);
 	
@@ -50,9 +50,9 @@
 	    }
 function control(){	
 	
-	var datos = new Array(message.payloadString);
+	var datos = new Array();
 	for (var i=1; i<=10; i++){
-		 datos[i] = message.payloadString;
+		 datos[i] = document.getElementById("sensor").innerHTML;
 	}
 	document.write(datos);
 	console.log(message.payloadString);
