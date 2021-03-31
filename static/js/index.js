@@ -56,6 +56,6 @@ function control(){
 	datos[1] = 0;
 	datos[2] = 3;
 	datos[3] = 4;
-		document.write(datos[3]);
+		document.write(datos);
 	console.log(message.payloadString);
 }
