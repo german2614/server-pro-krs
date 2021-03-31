@@ -51,9 +51,11 @@
 function control(){	
 	
 	var datos = new Array();
-	for (var i=1; i<=10; i++){
-		 datos[i] = document.getElementById("sensor").innerHTML;
-	}
-	document.write(datos[3]);
+
+		 datos[0] = 1;
+	datos[1] = 0;
+	datos[2] = 3;
+	datos[3] = 4;
+		document.write(datos[3]);
 	console.log(message.payloadString);
 }
