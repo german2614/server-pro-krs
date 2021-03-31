@@ -52,10 +52,10 @@ function control(){
 	
 	var datos = new Array();
 
-		 datos[0] = sensor;
-	datos[1] = sensor;
-	datos[2] = sensor;
-	datos[3] = sensor;
+		 datos[0] = onMessageArrived;
+	datos[1] = onMessageArrived;
+	datos[2] = onMessageArrived;
+	datos[3] = onMessageArrived;
 		document.write(datos);
 	console.log(message.payloadString);
 }
